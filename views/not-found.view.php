@@ -24,7 +24,7 @@
       </h2>
 
       <div class="mb-5">
-        <a href="#" class="btn px-5 py-2 text-white fw-medium text-decoration-none" style="background-color: #b23b33; border-radius: 4px;">
+        <a href="#" class="fw-bold px-5 py-2 text-white fw-medium text-decoration-none" style="background-color: #b23b33; display: inline-block;">
           Головна сторінка
         </a>
       </div>
