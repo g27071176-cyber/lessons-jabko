@@ -39,7 +39,9 @@ if(!empty($_GET['search'])) {
     </div>
   
     <div class="col-md-6">
-      <?php include 'blocks/rating-sort.php'; ?>
+      <?php //include 'blocks/rating-sort.php'; ?>
+      <?= view('pages.category.blocks.rating-sort'); ?>
+
     </div>
   </div>
 
@@ -53,9 +55,21 @@ if(!empty($_GET['search'])) {
     <div class="col-9">
       <?php 
         if (isset($_GET['rotated'])) {
-            include 'page-category/product-list-rotated.php';
+            // include 'page-category/product-list-rotated.php';
+            echo view ('pages.category.product-rotated');
+
         } else {
-            include 'page-category/product-list.php'; 
+            // include 'page-category/product-list.php'; 
+            echo view ('pages.category.product-list', [
+              'pageNum' => $pageNum,
+              'perPage' => $perPage,
+              'search' => $search,
+              'totalProducts' => $totalProducts,
+              'products' => $products,
+              'totalPages' => $totalPages,
+              'prevPage' => $prevPage,
+              'nextPage' => $nextPage,
+            ]);
         }
       ?>
   </div>
