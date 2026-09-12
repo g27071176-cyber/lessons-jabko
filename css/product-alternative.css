@@ -1,0 +1,17 @@
+.product-alternative_header p {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+.product-alternative-title {
+  font-weight: bold;
+  font-weight: 24px;
+}
+.product-alternative-subtitle {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+}

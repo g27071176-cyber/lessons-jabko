@@ -1,0 +1,124 @@
+.delivery-pickup-item {  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  gap: 10px;
+}
+
+.delivery-company-item{
+  display: flex;
+  justify-content: space-between;
+  color: #d76d61;
+}
+
+.delivery-info-bg-grey{
+  background-color: #999 !important;
+}
+
+.delivery-time{
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery-right-side{
+  text-align: right;
+}
+
+.check-availability-btn {
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: #1d1d1d;
+}
+
+.bi-geo-alt-fill {
+  color: #168447;
+}
+
+.status-today {
+  color: #168447;
+}
+
+.status-free {
+  color: #999;
+}
+
+.modal-delivery-cities-input{
+  margin-bottom: 10px;
+}
+
+/* Контейнер поиска */
+.modal-search-wrap {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.modal-search-wrap .bi-search {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+
+.modal-delivery-cities-input {
+  padding-left: 38px;
+}
+
+
+
+.modal-delivery-cities-list{
+  display: grid;
+
+  /* repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px; */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+
+}
+
+.modal-delivery-cities-list .city-item{
+  color: #999;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #999;
+  text-align: center;
+  border-radius: 4px;
+  line-height: 35px;
+
+
+}
+
+/* Элемент города */
+/* .city-item {
+  padding: 10px 15px;
+  background-color: #2b3035;
+  border: 1px solid #495057;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+} */
+
+/* Эффект при наведении */
+.city-item:hover {
+  background-color: #0d6efd; /* Фирменный синий Bootstrap */
+  border-color: #0d6efd;
+  color: #fff;
+  transform: translateY(-2px); /* Легкое всплытие вверх */
+}
+
+.city-select{
+  font-weight: bold;
+  color: #fff;
+
+}
+
+
+
+
+
+
+
+

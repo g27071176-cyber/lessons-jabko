@@ -1,0 +1,66 @@
+/* Разворачиваем родительский контейнер */
+.store-container {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+/* Задаем нужную ширину самому аккордеону */
+.store-container .container {
+  max-width: 1490px !important; /* Укажи желаемую ширину (850px, 1000px и т.д.) */
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+/* Переменные Bootstrap Accordion под темную тему Ябко */
+.accordion-jabko {
+  --bs-accordion-bg: #1c1c1e;               /* Темно-серый фон карточек */
+  --bs-accordion-color: #ffffff;            /* Белый текст */
+  --bs-accordion-border-color: transparent;  /* Без рамок */
+  --bs-accordion-btn-bg: #1c1c1e;
+  --bs-accordion-btn-color: #ffffff;
+  --bs-accordion-active-bg: #1c1c1e;
+  --bs-accordion-active-color: #ffffff;
+  --bs-accordion-btn-focus-box-shadow: none;/* Убираем синюю рамку при клике */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;                                 /* Отступ между карточками */
+}
+
+/* Закругление углов у блоков */
+.accordion-jabko .accordion-item {
+  border-radius: 12px !important;
+  overflow: hidden;
+  border: none;
+}
+
+/* Настройка текста шапки */
+.accordion-jabko .accordion-button {
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+/* Замена стандартной галочки Bootstrap на знак "+" */
+.accordion-jabko .accordion-button::after {
+  background-image: none !important;
+  content: "+";
+  font-size: 30px;
+  font-weight: 300;
+  color: #8e8e93;
+  transform: none !important;
+}
+
+/* Значок "✕" для открытой карточки */
+.accordion-jabko .accordion-button:not(.collapsed)::after {
+  content: "✕";
+  color: #8e8e93;
+}
+
+/* Тело открытой карточки */
+.accordion-jabko .accordion-body {
+  padding: 0 20px 20px 20px;
+  background-color: #1c1c1e;
+  color: #e5e5ea;
+  font-size: 14px;
+}

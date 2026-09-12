@@ -1,0 +1,53 @@
+.product-characteristics-title{
+  font-size: 24px;
+}
+
+.product-characteristics-subtitle{
+  padding-left: 20px;
+  font-size: 24px;
+}
+
+.product-characteristics-item {
+  padding: 8px 40px 8px 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+
+  
+}
+
+.product-characteristics-item:nth-child(odd){
+  background-color: #000;
+}
+
+.product-characteristics-label {
+  color: #777;
+  
+}
+.product-characteristics-value {
+}
+
+.product-characteristics-more-btn{
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  padding: 6px 20px;
+  margin: 0 auto;
+  background-color: #fff;
+  display: inline-flex;
+  gap: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  
+}
+
+#product_characteristics_more{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+#product_characteristics_more.show{
+  max-height: 500px;
+}

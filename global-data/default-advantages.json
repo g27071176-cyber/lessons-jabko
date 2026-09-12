@@ -1,0 +1,27 @@
+[
+        {
+            "icon": "truck",
+            "text": "Fast free delivery",
+            "icon_color": "#4ECDC4",
+            "text_color": "#81E6D9"
+        },
+        {
+            "icon": "pie-chart",
+            "text": "Payment in installments up to 24 payments",
+            "icon_color": "#F6AD55",
+            "text_color": "#FBD38D"
+        },
+        {
+            "icon": "shield-check",
+            "text": "Buy quickly at a profitable TRADE IN",
+            "icon_color": "#667EEA",
+            "text_color": "#A3BFFA"
+        },
+        {
+            "icon": "shield-check",
+            "text": "Reliable service and warranty",
+            "icon_color": "#ECC94B",
+            "text_color": "#F6E05E"
+        }
+]
+

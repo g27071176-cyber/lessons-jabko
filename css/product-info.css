@@ -1,0 +1,358 @@
+.product-info-wrapper {
+  display: flex;
+  gap: 6px;
+}
+
+.product-images {
+  width: 45%;
+  background: var(--card-bg);
+}
+
+.product-image img{
+  width: 100%;
+}
+
+
+
+.product-info {
+  width: 55%;
+}
+
+.product-info-block {
+  background: var(--card-bg);
+  padding: 20px;
+  margin-bottom: 6px;
+}
+
+.product-info-cards .product-info-block{
+  display: flex;
+  grid-auto-rows: 100px;
+  gap: 10px;
+}
+.product-info-block:last-child{
+  margin-bottom: 0;
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-reviews-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.product-rating{
+  font-size: 12px;
+  display: flex;
+  gap: 8px;
+  color: #999;
+}
+
+.product-availability{
+  border: 1px solid green;
+  color: green;
+  padding: 8px 17px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.product-availability::after{
+  content: '';
+  background-color: green;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  margin-left: 5px;
+  border-radius: 50%;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+.product-availability:hover{
+  box-shadow: 0 0 10px green;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.product-price {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.product-price-wrapper{
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.product-discount{
+  margin-left: 10px;
+  color: #000;
+  background-color: #f25656e6;
+  padding: 7px 15px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.product-code{
+  margin-left: auto;
+  color: #999;
+  font-size: 12px;
+  font-weight: bold;
+
+}
+
+
+.product-cashback{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cashback-label{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #7b8bc2;
+  font-size: 20px;
+
+}
+
+.cashback-amount{
+  font-weight: bold;
+}
+
+.product-info .product-delivery-wrapper{
+  padding: 8px;
+}
+
+.product-delivery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.product-delivery i{
+  font-size: 20px;
+  margin-right: 5px;
+  color: #d8b010;
+}
+
+.product-variants-label{
+  font-size: 14px;
+  font-weight: bold;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.product-variants{
+  display: flex;
+  gap: 10px;
+}
+
+.product-variant{
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.product-variant:hover,
+.product-variant.active{
+  border: 1px solid #fff;
+  box-shadow: 0 0 0 2px #1d1c1c inset;
+  
+}
+.product-variant.variant-grey{
+  background-color: #808387;
+
+}
+
+.product-variant.variant-blue{
+  background-color: #007dff;
+}
+
+.product-variant.variant-black{
+  background-color: #0e0e0e;
+}
+.product-variant.variant-orange{
+  background-color: #f00909;
+
+}
+
+.product-variant.variant-olive{
+  background-color: #4c7265;
+
+}
+
+
+
+
+
+.product-buy-actions{
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+}
+
+
+/* КНОПКА КУПИТЬ — Пересобираем слои */
+.product-buy-btn {
+  position: relative;
+  z-index: 1; /* Создаем контекст для внутренних элементов */
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0; 
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden; 
+  color: #ffffff;
+  border-radius: 4px; /* Твои текущие настройки */
+  
+  /* Убираем анимацию и фон отсюда, переносим их на псевдоэлемент ниже */
+  background: transparent; 
+  transition: transform 0.1s ease;
+}
+
+
+/* Создаем изолированный подслой для анимированного градиента */
+.product-buy-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(89deg, #f50008, #86007b 25%, #4e26cf 50%, #86007b 75%, #f50008);
+  background-size: 400% 100%;
+  animation: gradientShimmer 12s linear infinite;
+  z-index: 1; /* Самый нижний слой внутри кнопки */
+}
+
+/* Текст внутри кнопки — поднимаем выше фона */
+.product-buy-btn span {
+  position: relative;
+  z-index: 3; /* Текст выше и фона, и всплеска */
+  pointer-events: none;
+  line-height: 1; 
+}
+
+/* Эффект всплеска — теперь он зажат между фоном (z-index: 1) и текстом (z-index: 3) */
+.product-buy-btn .ripple {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7); /* Плотный белый цвет вспышки */
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0);
+  animation: ripple-animation 0.4s ease-out;
+  z-index: 2; /* Четко посередине: поверх градиента */
+}
+
+/* Анимация всплеска */
+@keyframes ripple-animation {
+  to {
+    transform: translate(-50%, -50%) scale(4); /* Увеличиваем круг в 4 раза */
+    opacity: 0; /* И плавно растворяем */
+  }
+}
+
+/* Анимация перелива градиента */
+@keyframes gradientShimmer {
+  0% { background-position: 0 0; }
+  50% { background-position: 200% 0; }
+  100% { background-position: 0 0; }
+}
+
+.product-google-pay{
+  background-color: #fff;
+  width: 50%;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  color: #000;
+  background-image: url(https://www.gstatic.com/instantbuy/svg/light/ru.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+
+@keyframes gradientShimmer {
+    0% {
+        background-position: 0 0
+    }
+
+    50% {
+        background-position: 200% 0
+    }
+
+    100% {
+        background-position: 0 0
+    }
+}
+
+
+.product-delivery-list li{
+  margin-top: 17px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.product-delivery-list li:nth-child(1){
+  color: #10d824;
+}
+.product-delivery-list li:nth-child(2){
+  color: #8d580e;
+}
+
+.product-delivery-list li:nth-child(3){
+  color: #3d0b95;
+}
+
+.product-delivery-list li i{
+  margin-right: 5px;
+}
+
+.product-delivery-info {
+  background-color: #fff;
+  margin-left: 5px;
+}
+
+.product-delivery-list li:nth-child(1) .product-delivery-info{
+  background-color: #10d824;;
+}
+
+.product-delivery-list li:nth-child(2) .product-delivery-info{
+  background-color: #8d580e;
+}
+
+.product-delivery-list li:nth-child(3) .product-delivery-info{
+  background-color: #3d0b95;
+}
+
