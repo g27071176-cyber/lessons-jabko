@@ -1,6 +1,0 @@
-<?php
-
-load_controller();
-
-
-

@@ -1,9 +1,11 @@
 
   <div class="header-wrapper">
     <div class="header container">
-      <div class="logo">
+
+      
+      <a class="logo" href="#">
         Apple
-      </div>
+      </a>
 
       <div class="catalog-menu sliced-comers">
         <span><i class="bi bi-list"></i>Catalog</span>

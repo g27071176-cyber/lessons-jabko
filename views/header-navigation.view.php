@@ -1,4 +1,3 @@
-
   <div class="navigation container">
 
     <div class="nav-cities">

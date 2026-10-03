@@ -234,6 +234,12 @@
   background: #0f0f0f;
 }
 
+.header .logo{
+  font-size: 35px;
+  color: #fff;
+  text-decoration: none;
+}
+
 .wrap-site-cent {
   padding: 0 15px;
   display: flex;
