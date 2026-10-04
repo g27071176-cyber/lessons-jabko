@@ -1,5 +1,6 @@
 @import url(/css/header.css);
 @import url(/css/breadcrumbs.css);
+@import url(/css/main.css);
 @import url(/css/sort.css);
 @import url(/css/rating-sort.css);
 @import url(/css/product-tabs.css);
@@ -82,6 +83,10 @@ body{
   font-family: serif;
   cursor: pointer;
   user-select: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 

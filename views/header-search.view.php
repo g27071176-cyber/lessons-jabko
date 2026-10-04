@@ -3,7 +3,7 @@
     <div class="header container">
 
       
-      <a class="logo" href="#">
+      <a class="logo" href="/">
         Apple
       </a>
 
