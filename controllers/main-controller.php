@@ -5,7 +5,7 @@ $bannerData = [
   'https://img.jabko.ua/image/cache/catalog/products/2026/09/241506/Aksesuari-Desktop-(1)-max-1700.png.webp',
   'https://img.jabko.ua/image/cache/catalog/products/2026/09/241506/Aksesuari-Desktop-(1)-max-1700.png.webp',
   'https://img.jabko.ua/image/cache/catalog/products/2026/09/241506/Aksesuari-Desktop-(1)-max-1700.png.webp',
-  'https://img.jabko.ua/image/cache/catalog/products/2026/09/241506/Aksesuari-Desktop-(1)-max-1700.png.webp',
+  
 ];
 
 echo view('main', [
