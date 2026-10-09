@@ -10,14 +10,14 @@
     flex: 1 1 0;
     min-width: 0;
     padding: 1px; /* Толщина белой границы */
-    --notchSize: 12px;
+    --notchSize: 18px;
 }
 
 /* Белая подложка-рамка */
 .banner-card .btn-bg {
     position: absolute;
     inset: 0; /* То же самое, что top:0; left:0; right:0; bottom:0; */
-    background-color: rgba(255, 255, 255, 0.4); /* Белый цвет границы */
+    background-color: rgba(88, 88, 88, 0.4); /* Белый цвет границы */
     z-index: 1;
 
     clip-path: polygon(
@@ -105,3 +105,66 @@
 #carouselExampleIndicators .carousel-indicators .active {
     background-color: #ffffff;
 }
+
+.carousel {
+    flex-grow: 1; /* Карусель занимает всё оставшееся место по ширине */
+    min-width: 0;
+}
+
+
+
+.hero-section {
+    display: flex;
+    gap: 12px;
+    align-items: stretch;
+}
+
+.sidebar-menu {
+    width: 260px;
+    flex-shrink: 0;
+    background-color: #121212;
+    padding: 10px 0;
+}
+
+.sidebar-menu ul.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item{
+    padding: 2px 6px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sidebar-menu .menu-link:hover {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.sidebar-menu .menu-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-menu .menu-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.sidebar-menu .menu-arrow {
+    color: #666;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+

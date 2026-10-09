@@ -89,4 +89,13 @@ img {
   max-width: 100%;
 }
 
+a, ul, li{
+  text-decoration: none;
+  color: #999999;
+  font: inherit;
+}
+
+
+
+
 
