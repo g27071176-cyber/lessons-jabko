@@ -111,12 +111,9 @@
     min-width: 0;
 }
 
-
-
 .hero-section {
     display: flex;
     gap: 12px;
-    align-items: stretch;
 }
 
 .sidebar-menu {
@@ -126,8 +123,7 @@
     padding: 10px 0;
 }
 
-.sidebar-menu ul.menu-list {
-    list-style: none;
+.sidebar-menu .menu-list {
     padding: 0;
     margin: 0;
 }
@@ -138,26 +134,31 @@
     font-size: 16px;
 }
 
-.sidebar-menu .menu-link:hover {
+.menu-link{
+    display: flex;
+    align-items: center;
+    
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar-menu .menu-item:hover {
     background-color: #1e1e1e;
     color: #ffffff;
 }
-
-.sidebar-menu .menu-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
 .sidebar-menu .menu-icon {
     width: 20px;
     height: 20px;
     object-fit: contain;
+    margin-right: 8px;
 }
 
-.sidebar-menu .menu-arrow {
-    color: #666;
-    font-size: 14px;
+.menu-title {
+    flex-grow: 1; /* Текст толкает стрелочку в самый правый край */
+}
+
+.menu-arrow {
+    margin-left: auto;
 }
 
 
