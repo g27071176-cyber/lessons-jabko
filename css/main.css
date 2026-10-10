@@ -1,4 +1,3 @@
-/* --- КАРТОЧКА С БЕЛОЙ РАМКОЙ --- */
 .main-banner {
     display: flex;
     gap: 8px;
@@ -9,15 +8,14 @@
     position: relative;
     flex: 1 1 0;
     min-width: 0;
-    padding: 1px; /* Толщина белой границы */
+    padding: 1px; 
     --notchSize: 18px;
 }
 
-/* Белая подложка-рамка */
 .banner-card .btn-bg {
     position: absolute;
-    inset: 0; /* То же самое, что top:0; left:0; right:0; bottom:0; */
-    background-color: rgba(88, 88, 88, 0.4); /* Белый цвет границы */
+    inset: 0; 
+    background-color: rgba(88, 88, 88, 0.4); 
     z-index: 1;
 
     clip-path: polygon(
@@ -32,7 +30,6 @@
     );
 }
 
-/* Картинка поверху подложки */
 .banner-card img {
     position: relative;
     z-index: 2;
@@ -53,7 +50,6 @@
     );
 }
 
-/* --- КРУГЛЫЕ КНОПКИ-СТРЕЛОЧКИ ПО БОКАМ --- */
 #carouselExampleIndicators .carousel-control-prev,
 #carouselExampleIndicators .carousel-control-next {
     width: 24px;
@@ -67,15 +63,14 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Выносим стрелки на края слайдера */
 #carouselExampleIndicators .carousel-control-prev {
     left: 10px;
 }
+
 #carouselExampleIndicators .carousel-control-next {
     right: 10px;
 }
 
-/* Делаем иконку внутри кнопки черной */
 #carouselExampleIndicators .carousel-control-prev-icon,
 #carouselExampleIndicators .carousel-control-next-icon {
     filter: invert(1);
@@ -83,9 +78,8 @@
     height: 14px;
 }
 
-/* --- ПОЛОСКИ-ИНДИКАТОРЫ ВНИЗУ --- */
 #carouselExampleIndicators .carousel-indicators {
-    position: static; /* Сбрасываем абсолютное позиционирование Bootstrap */
+    position: static; 
     margin: 15px 0 0 0;
     justify-content: center;
     gap: 8px;
@@ -107,7 +101,7 @@
 }
 
 .carousel {
-    flex-grow: 1; /* Карусель занимает всё оставшееся место по ширине */
+    flex-grow: 1; 
     min-width: 0;
 }
 
@@ -146,6 +140,7 @@
     background-color: #1e1e1e;
     color: #ffffff;
 }
+
 .sidebar-menu .menu-icon {
     width: 20px;
     height: 20px;
@@ -154,7 +149,7 @@
 }
 
 .menu-title {
-    flex-grow: 1; /* Текст толкает стрелочку в самый правый край */
+    flex-grow: 1; 
 }
 
 .menu-arrow {

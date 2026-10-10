@@ -25,23 +25,22 @@
 
 <div class="main container">
   <div class="hero-section">
+
     <aside class="sidebar-menu">
       <ul class="menu-list">
         <?php foreach ($menuData as $item): ?>
           <li class="menu-item">
             <a href="<?= $item['link'] ?>" class="menu-link">
               <img class="menu-icon" src="<?= $item['icon'] ?>" alt="">
-                <span class="menu-title"><?= $item['title'] ?></span>
-                  <?php if (!empty($item['arrow'])): ?>
-                    <span class="menu-arrow">&rsaquo;</span>
-                  <?php endif; ?>
-                  </a>
-              </li>
+              <span class="menu-title"><?= $item['title'] ?></span>
+              <?php if (!empty($item['arrow'])): ?>
+              <span class="menu-arrow">&rsaquo;</span>
+              <?php endif; ?>
+            </a>
+          </li>
         <?php endforeach; ?>
       </ul>
     </aside>
-
-    <?= view('blocks/site-bar-menu') ?>
 
     <div class="carousel slide" id="carouselExampleIndicators">
       
@@ -51,7 +50,6 @@
           <div class="main-banner">
             <?php foreach ($bannerData as $imgUrl): ?>
               <div class="banner-card">
-                <!-- Біла підкладка зі скошеними кутами -->
                 <div class="btn-bg"></div>
                 <img src="<?= $imgUrl ?>" alt="Banner">
               </div>
