@@ -148,13 +148,17 @@
     margin-right: 8px;
 }
 
+
 .menu-title {
     flex-grow: 1; 
 }
 
 .menu-arrow {
     margin-left: auto;
+    font-weight: bold;
 }
+
+
 
 
 

@@ -42,8 +42,11 @@
       </ul>
     </aside>
 
-    <div class="carousel slide" id="carouselExampleIndicators">
-      
+    <div class="carousel slide" 
+    id="carouselExampleIndicators" 
+    data-bs-ride="carousel" 
+    data-bs-interval="4000">
+
       <div class="carousel-inner">
 
         <div class="carousel-item active">
@@ -130,6 +133,9 @@
 <?= view('footer') ?>
 <?= view('modals') ?>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 <?php //include 'vacancies-form.php'; ?>
 
 <?= view('blocks.site-bottom') ?>
+

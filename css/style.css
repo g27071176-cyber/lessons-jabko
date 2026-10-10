@@ -47,7 +47,7 @@ body{
 .cursor-pointer{
   cursor: pointer;
 }
-/* 
+
 .sliced-comers {
   clip-path: polygon(
     10px 0%, 
@@ -61,7 +61,7 @@ body{
   )
 } */
 
-/* .container{
+/* /* .container{
   max-width: 1520px;
   margin: 0 auto;
   width: calc(100% - 80px);
