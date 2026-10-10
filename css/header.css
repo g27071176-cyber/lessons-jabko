@@ -437,6 +437,20 @@
   align-items: center;
 }
 
+.catalog-wrapper{
+  position: relative;
+}
+
+.catalog-wrapper .sidebar-menu{
+  position: absolute;
+  z-index: 11;
+  display: none;
+}
+
+.catalog-wrapper:hover .sidebar-menu{
+display: block;
+}
+
 
 
 

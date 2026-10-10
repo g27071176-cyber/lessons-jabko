@@ -179,6 +179,10 @@ function get_products_store(): \SleekDB\Store {
     return $productStore;
 }
 
+function get_catalog_items(){
+    return require __DIR__. '/global-data/catalog-items.php';
+}
+
 
 
 

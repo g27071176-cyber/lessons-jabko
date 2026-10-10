@@ -24,9 +24,33 @@
 
 function submit_vacancies_form(form) {
     console.log('submit_vacancies_form');
-    console.log(form);
 
+    const formData = new FormData(form);
     
+    const data = Object.fromEntries(formData.entries());
+
+    console.log(data);
+
+    const jsonData = JSON.stringify(data);
+
+    fetch('/?page=vacancies-submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: jsonData
+})
+    .then(response => response.json())
+    .then(result => {
+        console.log(result);
+        show_success_message(form, result);
+    })
+    .catch(error => console.error(error));
+
+}
+
+
+function show_success_message(form, result) {
+
+    form.innerHTML = '<div class="vacancies-success-message">' + result.message + '</div>';
 }
 
 

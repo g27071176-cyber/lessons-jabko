@@ -61,11 +61,11 @@ body{
   )
 } */
 
-/* /* .container{
+.container{
   max-width: 1520px;
   margin: 0 auto;
   width: calc(100% - 80px);
-} */
+}
 
 .main{
   flex: 1;
@@ -94,7 +94,6 @@ a, ul, li{
   color: #999999;
   font: inherit;
   list-style: none;
-
 }
 
 

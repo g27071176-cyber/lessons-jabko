@@ -1,14 +1,32 @@
-
   <div class="header-wrapper">
     <div class="header container">
 
       
       <a class="logo" href="/">
-        Apple
+        Ябко
       </a>
 
-      <div class="catalog-menu sliced-comers">
-        <span><i class="bi bi-list"></i>Catalog</span>
+      <div class="catalog-wrapper">
+
+        <div class="catalog-menu sliced-comers">
+          <span><i class="bi bi-list"></i>Catalog</span>
+        </div>
+
+        <aside class="sidebar-menu">
+          <ul class="menu-list">
+            <?php foreach (get_catalog_items() as $item): ?>
+              <li class="menu-item">
+                <a href="<?= $item['link'] ?>" class="menu-link">
+                  <img class="menu-icon" src="<?= $item['icon'] ?>" alt="">
+                  <span class="menu-title"><?= $item['title'] ?></span>
+                  <?php if (!empty($item['arrow'])): ?>
+                  <span class="menu-arrow">&rsaquo;</span>
+                  <?php endif; ?>
+                </a>
+              </li>
+            <?php endforeach; ?>
+          </ul>
+        </aside>
       </div>
 
 

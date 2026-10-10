@@ -32,14 +32,17 @@
       <div class="form-grid">
         <!-- Ліва колонка з інпутами -->
         <div class="left-column">
-          <input type="text" class="input-field" placeholder="Ваше Ім'я та Прізвище*">
-          <input type="text" class="input-field" placeholder="Місто проживання*" >
-          <input type="text" class="input-field" placeholder="Контактні дані*" >
+          <input type="text" name="name" class="input-field" placeholder="Ваше Ім'я та Прізвище*">
+          <input type="text" name="city" class="input-field" placeholder="Місто проживання*" >
+          <input type="text" name="contact" class="input-field" placeholder="Контактні дані*" >
         </div>
         
         <!-- Права колонка з текстовим полем та кнопками -->
         <div class="right-column">
-          <textarea class="textarea-field" placeholder="Яка вакансія Вас зацікавила та чому?&#10;Напишіть коротко про себе"></textarea>
+          <textarea 
+          name="message" 
+          class="textarea-field" 
+          placeholder="Яка вакансія Вас зацікавила та чому?&#10;Напишіть коротко про себе"></textarea>
           
           <div class="action-row">
             <button type="submit" class="submit-btn">Відправити анкету</button>
