@@ -1,13 +1,30 @@
 <?php
 
 return[
-  
+    
     [
         'title' => 'Празднуем 12 лет',
         'icon'  => 'https://img.jabko.ua/image/cache/00-2026-menu/selebrate-max-100.png.webp',
         'link'  => '#',
         'arrow' => false,
+        'submenu' => [
+            [ 
+                'title' => 'Submenu item 1',
+                'link' => '#',
+            ],
+            
+            [ 
+                'title' => 'Submenu item 2',
+                'link' => '#',
+            ],
+            
+            [ 
+                'title' => 'Submenu item 3',
+                'link' => '#',
+            ],
+        ],
     ],
+
     [
         'title' => 'Apple',
         'icon'  => 'https://img.jabko.ua/image/cache/00-2026-menu/new-iphoone-max-100.png.webp',
@@ -31,6 +48,22 @@ return[
         'icon'  => 'https://img.jabko.ua/image/cache/0806-menu-new/pixel-10-pro-menu-max-100.png.webp',
         'link'  => '#',
         'arrow' => true,
+        'submenu' => [
+            [ 
+                'title' => 'Submenu item 1',
+                'link' => '#',
+            ],
+            
+            [ 
+                'title' => 'Submenu item 2',
+                'link' => '#',
+            ],
+            
+            [ 
+                'title' => 'Submenu item 3',
+                'link' => '#',
+            ],
+        ],
     ],
 
 

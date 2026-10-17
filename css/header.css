@@ -438,28 +438,24 @@
 }
 
 .catalog-wrapper{
+  /* position: relative; */
+}
+
+
+.header.container{
   position: relative;
 }
 
 .catalog-wrapper .sidebar-menu{
   position: absolute;
   z-index: 11;
-  display: none;
+  /* display: none; */
+  left: 0;
 }
 
 .catalog-wrapper:hover .sidebar-menu{
 display: block;
 }
-
-
-
-
-
-
-
-
-
-
 
 .wrap-site.grid4{
   display: grid;
@@ -474,6 +470,9 @@ display: block;
   margin: auto;
   gap: 15px;
 }
+
+
+
 
 .header .logo {
   font-size: 35px;
@@ -671,3 +670,89 @@ display: block;
 .right-menu-item a:hover::after {
   opacity: 1;
 }
+
+
+
+.sidebar-menu {
+    width: 260px;
+    flex-shrink: 0;
+    background-color: #121212;
+    padding: 10px 0;
+}
+
+.sidebar-menu .menu-list {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item{
+    padding: 2px 6px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu-link{
+    display: flex;
+    align-items: center;
+    
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar-menu .menu-item:hover {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.sidebar-menu .menu-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 8px;
+}
+
+
+.menu-title {
+    flex-grow: 1; 
+}
+
+.menu-arrow {
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 2px;
+    display: block;
+    transform: translateY(-2px);
+    overflow: hidden;
+}
+
+
+.sidebar-menu .submenu{
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #121212;
+  padding: 20px;
+  white-space: nowrap;
+
+}
+
+.sidebar-menu .menu-item:hover .submenu{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -15,14 +15,33 @@
         <aside class="sidebar-menu">
           <ul class="menu-list">
             <?php foreach (get_catalog_items() as $item): ?>
-              <li class="menu-item">
+
+              <li class="menu-item position-relative">
+
                 <a href="<?= $item['link'] ?>" class="menu-link">
                   <img class="menu-icon" src="<?= $item['icon'] ?>" alt="">
                   <span class="menu-title"><?= $item['title'] ?></span>
-                  <?php if (!empty($item['arrow'])): ?>
+                  <?php if (!empty($item['submenu'])): ?>
                   <span class="menu-arrow">&rsaquo;</span>
                   <?php endif; ?>
+                  
                 </a>
+
+                <?php if (!empty($item['submenu']) && is_array($item['submenu'])): ?>
+                <ul class="submenu">
+                  <?php foreach ($item['submenu'] as $subitem): ?>
+
+                  <li>
+                    <a href="<?= $subitem['link'] ?>"><?= $subitem['title'] ?>
+                    </a>
+                  </li>
+                  <?php endforeach; ?>
+
+                </ul>
+
+                <?php endif; ?>
+
+
               </li>
             <?php endforeach; ?>
           </ul>
