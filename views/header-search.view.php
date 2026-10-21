@@ -1,5 +1,5 @@
   <div class="header-wrapper">
-    <div class="header container">
+    <div class="header container container">
 
       
       <a class="logo" href="/">

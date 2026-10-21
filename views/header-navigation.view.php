@@ -1,4 +1,4 @@
-  <div class="navigation container">
+  <div class="container navigation-container">
 
     <div class="nav-cities">
       <div class="nav-choose-city">

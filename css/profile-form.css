@@ -22,12 +22,10 @@
   border-radius: 0;
   color: #888;
   padding: 10px 1px;
-
 }
 
 .profile-form input::placeholder{
   color: #555;
-
 }
 
 

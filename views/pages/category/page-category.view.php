@@ -17,7 +17,7 @@
     </div>
   </div>
 
-  <div class="main container">
+  <div class="main-container">
 
     <?php
 

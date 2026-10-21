@@ -4,7 +4,7 @@
 
   <?= view('header-search') ?>
 
-  <div class="main container">
+  <div class="main-container">
 
     <h1>404</h1>
 

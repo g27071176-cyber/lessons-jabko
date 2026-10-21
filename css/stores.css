@@ -7,7 +7,7 @@
 
 /* Задаем нужную ширину самому аккордеону */
 .store-container .container {
-  max-width: 1490px !important; /* Укажи желаемую ширину (850px, 1000px и т.д.) */
+  max-width: 1520px !important; Укажи желаемую ширину (850px, 1000px и т.д.)
   width: 100% !important;
   margin: 0 auto !important;
 }

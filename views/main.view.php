@@ -23,7 +23,7 @@
   </div>
 </div>
 
-<div class="main container">
+<div class="main-container container ">
   <div class="hero-section">
 
     <div class="carousel slide" 
@@ -112,7 +112,11 @@
 
     </div> <!-- /carousel -->
   </div> 
-</div><!-- /main container -->
+</div>
+
+
+
+<?= view('scroll-menu') ?>
 
 <?= view('footer') ?>
 <?= view('modals') ?>

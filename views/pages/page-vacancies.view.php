@@ -23,7 +23,7 @@
     </div>
   </div>
 
-  <div class="main container">
+  <div class="main-container">
 
 <div class="form-container">
     <h2 class="form-title">Відправляйте онлайн анкету щоб зв'язатися з Вами</h2>

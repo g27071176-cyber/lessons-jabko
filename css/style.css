@@ -17,6 +17,8 @@
 @import url(/css/product-list.css);
 @import url(/css/profile-form.css);
 
+
+@import url(/css/scroll-menu.css);
 @import url(/css/footer.css);
 @import url(/css/vacancies-fotm.css);
 @import url(/css/stores.css);
@@ -61,11 +63,22 @@ body{
   )
 } */
 
-.container{
-  max-width: 1520px;
+.container {
+  /* max-width: 1520px; */
   margin: 0 auto;
   width: calc(100% - 80px);
 }
+
+/* @media {
+  .container, 
+  .container-sm, 
+  .container-md, 
+  .container-lg, 
+  .container-xl, 
+  .container-xxl {
+    max-width: 1520px; 
+  }
+} */
 
 .main{
   flex: 1;
@@ -95,6 +108,8 @@ a, ul, li{
   font: inherit;
   list-style: none;
 }
+
+
 
 
 

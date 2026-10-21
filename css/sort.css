@@ -10,20 +10,16 @@
   background-color: #000;
   border: none;
 }
-.dropdown-toggle {
-}
+
 .dropdown-menu {
   background-color: #1a1a1a;
 }
+
 .dropdown-item {
   font-size: 14px;
   font-weight: bold;
   color: #fff;
 }
-
-
-
-
 
 /* .sort-dropdown {
   position: relative;
