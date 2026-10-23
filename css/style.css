@@ -19,12 +19,17 @@
 
 
 @import url(/css/scroll-menu.css);
+@import url(/css/footer2.css);
+
 @import url(/css/footer.css);
 @import url(/css/vacancies-fotm.css);
 @import url(/css/stores.css);
 
 :root{
   --card-bg: #1d1d1d;
+
+  --panel-close-dur: 0.3s;       /* Задайте нужное время, например 0.3 секунды */
+  --panel-ease: ease-in-out;     /* Задайте тип анимации */
 }
 
 *{
@@ -64,9 +69,8 @@ body{
 } */
 
 .container {
-  /* max-width: 1520px; */
+  max-width: 1520px;
   margin: 0 auto;
-  width: calc(100% - 80px);
 }
 
 /* @media {
@@ -81,7 +85,7 @@ body{
 } */
 
 .main{
-  flex: 1;
+  flex-grow: 1;
 }
 
 .info-circle {

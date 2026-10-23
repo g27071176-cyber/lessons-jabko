@@ -1,12 +1,55 @@
-  <div class="header-wrapper">
-    <div class="header container container">
+    <div class="header-cent">
+    <div class="wrap-site-grid4">
+      <div class="header-bottom">
+        <a class="logo" href="/">Ябко</a>
+        <div class="catalog-wrapper">
+          <div class="catalog-menu sliced-comers">
+            <span><i class="bi bi-list"></i>Catalog</span>
+          </div>
 
-      
-      <a class="logo" href="/">
-        Ябко
-      </a>
+          <aside class="sidebar-menu">
+            <ul class="menu-list">
+              <?php foreach (get_catalog_items() as $item): ?>
+                <li class="menu-item position-relative">
+                  <a href="<?= $item['link'] ?>" class="menu-link">
+                    <img class="menu-icon" src="<?= $item['icon'] ?>" alt="">
+                    <span class="menu-title"><?= $item['title'] ?></span>
+                    <?php if (!empty($item['submenu'])): ?>
+                      <span class="menu-arrow">&rsaquo;</span>
+                    <?php endif; ?>
+                  </a>
 
-      <div class="catalog-wrapper">
+                  <?php if (!empty($item['submenu']) && is_array($item['submenu'])): ?>
+                    <ul class="submenu">
+                      <?php foreach ($item['submenu'] as $subitem): ?>
+                        <li>
+                          <a href="<?= $subitem['link'] ?>"><?= $subitem['title'] ?></a>
+                        </li>
+                      <?php endforeach; ?>
+                    </ul>
+                  <?php endif; ?>
+                </li>
+              <?php endforeach; ?> <!-- ВОТ ЭТОГО НЕ ХВАТАЛО -->
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <form class="search">
+      <button type="submit"><i class="bi bi-search"></i></button>
+            
+      <input type="hidden" name="page" value="category">
+      <input type="text" class="sliced-corners" name="search" value="<?= htmlspecialchars($_GET['search'] ?? '') ?>"
+      autocomplete="off">
+    </form>
+
+
+
+    </div>
+
+
+      <!-- <div class="catalog-wrapper">
 
         <div class="catalog-menu sliced-comers">
           <span><i class="bi bi-list"></i>Catalog</span>
@@ -46,7 +89,7 @@
             <?php endforeach; ?>
           </ul>
         </aside>
-      </div>
+      </div> -->
 
 
       <form class="search">
@@ -82,4 +125,3 @@
         </li>
       </ul>
     </div>
-  </div>

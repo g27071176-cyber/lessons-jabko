@@ -1,0 +1,189 @@
+footer.footer-site{
+  transition: padding-bottom var(--panel-close-dur) var(--panel-ease);
+  color: #f5f5f5;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.footer-top{
+  /* background-color: #dd0a0a; */
+  padding: 24px 40px 24px;
+}
+
+.footer-wrap{
+  max-width: 1580px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footer-layout{
+  display: grid;
+  gap: 40px;
+}
+
+.footer-contact-row{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #313131;
+}
+
+.footer-contact-details{
+  /* background-color: #c0e05d; */
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-contact-text {
+  display: flex;
+  flex-direction: column; 
+}
+
+.footer-contact-text a {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-contact-text small {
+  color: #999999;
+  font-size: 12px;
+  font-weight: normal;
+  font-weight: bold;
+}
+
+.footer-contact-title{
+  display: none;
+}
+
+  .footer-contact-messengers {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.footer-contact-messengers {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.footer-contact-messengers .social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+    
+  width: 170px;  
+  height: 48px;  
+  
+  background-color: #16181d;
+  border: 1px solid #282a36;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  box-sizing: border-box; 
+}
+
+.footer-contact-messengers .social-btn:hover {
+  border-color: #444857;
+  background-color: #1e2028;
+}
+
+.footer-contact-messengers .social-btn i {
+  font-size: 18px;
+}
+
+.footer-contact-messengers .bi-telegram {
+  color: #229ed9;
+}
+
+.footer-contact-messengers .fa-viber {
+  color: #7360f2;
+}
+
+.footer-contact-socials{
+  /* background-color: #b644c8; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  gap: 24px;                 
+}
+.social-icons-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;                 
+}
+
+.social-icons-group .soc-icon {
+  color: #ffffff;
+  font-size: 24px;          
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.social-icons-group .soc-icon:hover {
+  opacity: 0.8;
+}
+
+.social-icons-group .soc-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.footer-join-text {
+  color: #b4b3b3;            
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  font-weight: bold;
+}
+
+.footer-navigation{
+  display: grid;
+  grid-template-columns: minmax(135px, 1fr) minmax(170px, 1.55fr) minmax(0, 3.35fr);
+  gap: 36px;
+  padding: 40px 0;
+  border-bottom: 1px solid #313131;
+}
+
+.footer-nav-information{
+  padding-right: 116px;
+  border-right: 1px solid #313131;
+}
+
+.footer-nav-blok{
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0;
+}
+
+.footer-nav-products{
+  padding-left: 50px;
+}
+
+.footer-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+    

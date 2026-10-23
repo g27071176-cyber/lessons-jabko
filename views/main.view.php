@@ -117,6 +117,8 @@
 
 
 <?= view('scroll-menu') ?>
+<?= view('footer2') ?>
+
 
 <?= view('footer') ?>
 <?= view('modals') ?>
