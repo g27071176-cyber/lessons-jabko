@@ -116,15 +116,18 @@
             
           </div>
         </div>
-        
+
+
         <div class="footer-bottom-bar">
           <span class="footer-copyright">© 2014–2026 Ябко</span>
+          
           <div class="footer-payments">
-            <span class="footer-payment footer-payment-visa">VISA</span>
-            <span class="footer-payment footer-payment-mastercard">MasterCard</span>
-            <span class="footer-payment footer-payment-apple-pay"> Pay</span>
+            <span class="footer-payment">VISA</span>
+            <span class="footer-payment-1">MasterCard</span>
+            <span class="footer-payment">Pay</span>
           </div>
-          <a class="footer-public-offer" href="#"></a>
+
+          <a class="footer-public-offer" href="#">Договір публічної оферти</a>
         </div>
       </div>
     </div>
