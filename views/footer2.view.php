@@ -117,7 +117,6 @@
           </div>
         </div>
 
-
         <div class="footer-bottom-bar">
           <span class="footer-copyright">© 2014–2026 Ябко</span>
           

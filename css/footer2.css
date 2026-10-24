@@ -7,7 +7,7 @@ footer.footer-site{
 
 .footer-top{
   /* background-color: #dd0a0a; */
-  padding: 24px 40px 24px;
+  padding: 17px;
 }
 
 .footer-wrap{
@@ -20,6 +20,7 @@ footer.footer-site{
 }
 
 .footer-layout{
+  padding: 0;
   display: grid;
   gap: 40px;
 }
