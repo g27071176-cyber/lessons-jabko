@@ -79,4 +79,18 @@ h1{
 }
 
 
+/* .card {
+  --padding: 1rem;
+
+  min-width: 300px;
+  max-width: 400px;
+  padding: var(--padding);
+}
+
+.card__img {
+  width: calc(100% + var(--padding) * 2);
+  margin-left: calc(var(--padding) * -1);
+} */
+
+
 

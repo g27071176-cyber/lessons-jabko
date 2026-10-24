@@ -1,5 +1,3 @@
-<h2>FOOTER2</h2>
-
 <footer class="footer-site">
   <div class="footer-top">
     <div class="footer-wrap">
@@ -25,16 +23,24 @@
               </div>
             </div>
 
-
+<!-- 
           <div class="footer-contact-messengers">
-            <a href="https://t.me/ваш_аккаунт" class="social-btn" target="_blank">
+            <a href="#" class="social-btn" target="_blank">
               <i class="bi bi-telegram"></i> Telegram
             </a>
-            <a href="viber://chat?number=ваш_номер" class="social-btn">
+            <a href="#" class="social-btn">
+              <i class="fa-brands fa-viber"></i> Viber
+            </a>
+          </div> -->
+
+          <div class="footer-contact-messengers">
+            <a href="#" class="social-btn" target="_blank">
+              <i class="bi bi-telegram"></i> Telegram
+            </a>
+            <a href="#" class="social-btn">
               <i class="fa-brands fa-viber"></i> Viber
             </a>
           </div>
-
 
           <div class="footer-contact-socials">
             <div class="social-icons-group">
@@ -113,7 +119,6 @@
                   <li><a href="#">Уцінена техніка</a></li>
                 </ul>
               </div>
-            
           </div>
         </div>
 
@@ -130,5 +135,4 @@
         </div>
       </div>
     </div>
-  </div>
 </footer>

@@ -1,4 +1,4 @@
-<footer class="container bg-black text-white">
+<!-- <footer class="container bg-black text-white">
   
   <div class="mx-auto">
     
@@ -90,4 +90,4 @@
 
     </div>
   </div>
-</footer>
+</footer> -->
