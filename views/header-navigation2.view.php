@@ -57,7 +57,7 @@
       <div class="nav-menu-item"><a href="">Кешбэк</a></div>
       <div class="nav-menu-item"><a href="">Акции</a></div>
       <div class="nav-menu-item"><a href="">Уценка</a></div>
-      <div class="nav-menu-item"><a href="">Новинки</a></div>
+      <div class="nav-menu-item"><a href="?page=vacancies-requests">Vacancies_requests</a></div>
       <div class="nav-menu-item"><a href="?page=vacancies">Вакансии</a></div>
       <div class="nav-menu-item"><a href="?page=login">login</a></div>
       </div>

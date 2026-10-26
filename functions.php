@@ -179,6 +179,19 @@ function get_products_store(): \SleekDB\Store {
     return $productStore;
 }
 
+
+function get_vacancies_request_store(): \SleekDB\Store {
+
+    static $vacanciesRequestStore = null;
+
+    if ($vacanciesRequestStore === null) {
+        $databaseDirectory =__DIR__. '/sleekdb';
+        $vacanciesRequestStore = new \SleekDB\Store('vacancies_requests', $databaseDirectory, ['timeout' => false]);
+    }
+
+    return $vacanciesRequestStore;;
+}
+
 function get_catalog_items(){
     return require __DIR__. '/global-data/catalog-items.php';
 }

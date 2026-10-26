@@ -469,7 +469,7 @@
 .catalog-wrapper .sidebar-menu{
   position: absolute;
   z-index: 11;
-  /* display: none; */
+  display: none;
   left: 0;
 }
 

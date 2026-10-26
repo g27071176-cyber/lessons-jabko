@@ -62,7 +62,7 @@
         <div class="item"><a href="#">Уценка</a></div>
         <div class="item"><a href="#">Гравировка</a></div>
         <div class="item"><a href="#">B2B</a></div>
-        <div class="item"><a href="#">Конфигуратор ПК</a></div>
+        <div class="item"><a href="?page=vacancies-requests">Vacancies_requests</a></div>
         <div class="item"><a href="?page=vacancies">Вакансии</a></div>
         <div class="item"><a href="?page=login">login</a></div>
       </div>
