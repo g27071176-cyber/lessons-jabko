@@ -1,0 +1,239 @@
+.scroll-menu-news span{
+  display: block;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.button-block {
+text-align: center;    
+}
+
+.button-block a {
+  display: inline-block;
+  width: 176px;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+
+  text-decoration: none; 
+  text-align: center;    
+  transition: background-color 0.3s ease; 
+}
+
+.button-block a:hover {
+  background-color: #e0e0e0; 
+}
+
+.items-container{
+  position: relative;
+  width: 1448px;
+  margin-left: 40px;
+}
+
+.scrolling-carousel.latest-slider{
+  display: block;
+  width: 100%;
+  height: 410px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.items{
+  display: flex;
+}
+
+.scrolling-carousel.items.blog-item:first-child {
+  margin-left: 0; 
+}
+
+.blog-item{
+  position: relative;
+  cursor: pointer;
+  padding-left: 2px;
+  padding-right: 1px;
+  width: 284px;
+  margin-right: 15px;
+  z-index: 1; /* Обычный слой */
+  transition: transform 0.4s ease, z-index 0s;
+}
+
+.blog-item:hover {
+    z-index: 10; /* При наведении карточка становится поверх кнопки и соседей */
+}
+
+
+
+.blog-item img{
+  width: 284px;
+  height: 260px;
+}
+
+/* 1. Ограничиваем область видимости контейнера картинки */
+.blog-item .blog-item-img {
+  overflow: hidden; /* Скрывает всё, что выходит за рамки при увеличении */
+  display: block;
+}
+
+/* 2. Задаем плавный переход для картинки */
+.blog-item .blog-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease; /* Скорость и плавность анимации */
+}
+
+/* 3. Эффект при наведении на всю карточку (.blog-item) */
+.blog-item:hover .blog-item-img img {
+  transform: scale(1.1); /* 1.1 означает увеличение на 10% (можете изменить на 1.05 или 1.2) */
+}
+
+
+
+.blog-item-title{
+  background: #1d1d1d none repeat scroll 0 0;
+  color: #888;
+  font-weight: 600;
+  font-size: 18px;
+  max-height: 410px;
+  line-height: 29px;
+  margin: 0;
+  overflow: hidden;
+  padding: 15px 20px;
+}
+
+
+.blog-item-title.blog-item-tag{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.blog-item-tags{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+
+}
+
+.blog-item-tags a{
+  color: #999;
+  border: 1px solid #999999;
+  background-color: transparent;
+  padding: 2px 8px;
+  position: unset;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  transition: .3s;
+  border-radius: 3px;
+}
+
+.blog-item-tags a:hover {
+  background-color: #ffffff; /* Белый фон */
+  color: #000000;            /* Черный текст */
+  border-color: #ffffff;     /* Белая рамка, чтобы совпадала с фоном */
+  font-weight: bold;
+}
+
+/* Початковий стан: приховано та згорнуто */
+.blog-item .tags-list-item {
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding: 0;
+  transform: translateY(-5px); /* Легкий ефект зсуву зверху вниз */
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              margin 0.5s ease, 
+              padding 0.5s ease;
+}
+
+/* При наведенні на картку */
+.blog-item:hover .tags-list-item {
+  opacity: 1;
+  visibility: visible;
+  max-height: 50px;
+  transform: translateY(0); /* Повертається на своє місце */
+  margin-bottom: 5px;
+}
+
+
+.line-clamp-2.break-word{
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+  overflow: hidden !important;
+  
+  /* Дополнительные параметры для правильного отображения */
+  font-size: 16px;
+  font-weight: bold;
+  color: #e0e0e0;
+  line-height: 23px;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  white-space: normal !important; /* ВАЖНО: сбрасывает nowrap, если он был у родителей */
+}
+
+
+.blog-item-info span{
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.blog-item-foot{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+/* Початковий стан: приховано та згорнуто */
+.blog-item .blog-item-foot{
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding: 0;
+  transform: translateY(-5px); /* Легкий ефект зсуву зверху вниз */
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              margin 0.5s ease, 
+              padding 0.5s ease;
+}
+
+/* При наведенні на картку */
+.blog-item:hover .blog-item-foot {
+  opacity: 1;
+  visibility: visible;
+  max-height: 50px;
+  transform: translateY(0); /* Повертається на своє місце */
+  margin-bottom: 5px;
+}
+
+
+
+
+

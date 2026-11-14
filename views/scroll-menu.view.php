@@ -1,5 +1,3 @@
-<h1>SCROLL-MENU</h1>
-
   <ul class="scroll-container">
 
     <li class="brand-list-item">
@@ -38,6 +36,8 @@
       </a>
     </li>
   </ul>
+
+<div class="hide-banner">
 
   <ul class="scroll-container">
     <li class="scroll-item-card">
@@ -235,4 +235,7 @@
       </a>
     </li>
   </ul>
+</div>
+
+
 

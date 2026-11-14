@@ -1,8 +1,6 @@
 <header class="main-head">
   <div class="header-top">
-  
     <div class="wrap-site-top">
-
       <div class="head-city">
         <div class="nav-choose-city">
           <i class="bi bi-geo-alt"></i>
@@ -20,12 +18,12 @@
               <div class="city-item">Вараш</div>
               <div class="city-item">Винница</div>
               <div class="city-item">Владимир</div>
-              <div class="city-item reagional-center">Днепр</div>
+              <div class="city-item regional-center">Днепр</div>
               <div class="city-item">Дрогобыч</div>
               <div class="city-item">Дубно</div>
               <div class="city-item">Житомир</div>
               <div class="city-item">Запорожье</div>
-              <div class="city-item reagional-center">Киев</div>
+              <div class="city-item regional-center">Киев</div>
               <div class="city-item">Ивано-Франковск</div>
               <div class="city-item">Камянец-Подольский</div>
               <div class="city-item">Калуш</div>
@@ -36,10 +34,10 @@
               <div class="city-item">Кременчук</div>
               <div class="city-item">Кропивницький</div>
               <div class="city-item">Луцк</div>
-              <div class="city-item reagional-center">Львов</div>
+              <div class="city-item regional-center">Львов</div>
               <div class="city-item">Николаев</div>
               <div class="city-item">Мукачево</div>
-              <div class="city-item reagional-center">Одесса</div>
+              <div class="city-item regional-center">Одесса</div>
               <div class="city-item">Александрия</div>
               <div class="city-item">Нетешин</div>
               <div class="city-item">Новый Роздол</div>
@@ -80,6 +78,91 @@
       </div>
     </div>
 
+  </div>
+
+
+  <div class="header-wrapper">
+    <div class="header container container">
+      <a href="/">
+        <img width="84" height="32" src="https://img.jabko.ua/image/img_menu/logo.svg" alt="j">
+      </a>
+
+      <div class="catalog-wrapper">
+
+        <div class="catalog-menu sliced-comers">
+          <span><i class="bi bi-list"></i>Catalog</span>
+        </div>
+
+        <aside class="sidebar-menu">
+          <ul class="menu-list">
+            <?php foreach (get_catalog_items() as $item): ?>
+
+              <li class="menu-item position-relative">
+
+                <a href="<?= $item['link'] ?>" class="menu-link">
+                  <img class="menu-icon" src="<?= $item['icon'] ?>" alt="">
+                  <span class="menu-title"><?= $item['title'] ?></span>
+                  <?php if (!empty($item['submenu'])): ?>
+                  <span class="menu-arrow">&rsaquo;</span>
+                  <?php endif; ?>
+                  
+                </a>
+
+                <?php if (!empty($item['submenu']) && is_array($item['submenu'])): ?>
+                <ul class="submenu">
+                  <?php foreach ($item['submenu'] as $subitem): ?>
+
+                  <li>
+                    <a href="<?= $subitem['link'] ?>"><?= $subitem['title'] ?>
+                    </a>
+                  </li>
+                  <?php endforeach; ?>
+
+                </ul>
+
+                <?php endif; ?>
+
+
+              </li>
+            <?php endforeach; ?>
+          </ul>
+        </aside>
+      </div>
+
+
+      <form class="search">
+
+        <button type="submit"><i class="bi bi-search"></i></button>
+              
+        <input type="hidden" name="page" value="category">
+        <input type="text" class="sliced-corners" name="search" value="<?= htmlspecialchars($_GET['search'] ?? '') ?>"
+        autocomplete="off">
+      </form>
+
+      <ul class="right-menu list-unstyled">
+        <li class="right-menu-item">
+          <a href="?page=category" class="sliced-comers">
+            <span>Products<i class="bi bi-airplane"></i></span>
+          </a>
+        </li>
+        <li class="right-menu-item">
+          <a class="sliced-comers" href="?page=product-edit">
+            <span>Add product <i class="bi bi-airplane"></i></span>
+          </a>
+        </li>
+        <li class="right-menu-item">
+          <a href="/seed-products.php" class="sliced-comers" target="_blank">
+            <span>Seed
+              <i class="bi bi-airplane"></i></span>
+          </a>
+        </li>
+        <li class="right-menu-item">
+          <a class="sliced-comers" href="#">
+            <span>Cart <i class="bi bi-airplane"></i></span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 
 

@@ -53,6 +53,29 @@ function show_success_message(form, result) {
     form.innerHTML = '<div class="vacancies-success-message">' + result.message + '</div>';
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.getElementById("toggleBlogBtn");
+  const hiddenCards = document.querySelectorAll(".blog-item.hidden-card");
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", function (e) {
+      e.preventDefault(); // Забороняємо перехід за посиланням "#"
+
+      // Перемикаємо клас 'show' для кожної прихованої картки
+      hiddenCards.forEach(card => {
+        card.classList.toggle("show");
+      });
+
+      // Змінюємо текст на кнопці залежно від стану
+      if (toggleBtn.textContent.trim() === "Читати Блог") {
+        toggleBtn.textContent = "Показати ще";
+      } else {
+        toggleBtn.textContent = "Читати Блог";
+      }
+    });
+  }
+});
+
 
 
 

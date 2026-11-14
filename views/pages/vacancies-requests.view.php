@@ -2,6 +2,10 @@
   /**
    *@var array $bannerData *
    */
+
+  /**
+   *@var array $vacanciesRequests *
+   */
   ?>
   
   <?= view('blocks/site-top') ?>
@@ -52,7 +56,7 @@
                 </tr>
             <?php endforeach; ?>
         </tbody>
-    </table>able>
+    </table>
 
   </div>
 

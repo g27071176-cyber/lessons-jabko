@@ -12,6 +12,9 @@ h1{
   margin: 0 auto;
   padding: 0;
 }
+.hide-banner{
+  margin-bottom: 50px;
+}
 
 .brand-list-item {
   width: 240px;
@@ -76,20 +79,3 @@ h1{
   margin: 0;
   width: 488px;
 }
-
-
-/* .card {
-  --padding: 1rem;
-
-  min-width: 300px;
-  max-width: 400px;
-  padding: var(--padding);
-}
-
-.card__img {
-  width: calc(100% + var(--padding) * 2);
-  margin-left: calc(var(--padding) * -1);
-} */
-
-
-

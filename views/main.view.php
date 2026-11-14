@@ -2,14 +2,14 @@
 /**
  *@var array $bannerData,
  */
+
 /**
  *@var array $menuData,
  */
 ?>
 
 <?= view('blocks/site-top') ?>
-<?= view('header-navigation') ?>
-<?= view('header-search') ?>
+<?= view('header-navigation') ?> 
 
 <div class="breadcrumbs-container container">
   <div class="row">
@@ -23,16 +23,14 @@
   </div>
 </div>
 
+
 <div class="main-container container ">
   <div class="hero-section">
-
-    <div class="carousel slide" 
-    id="carouselExampleIndicators" 
-    data-bs-ride="carousel" 
+    <div class="carousel slide"
+    id="carouselExampleIndicators"
+    data-bs-ride="carousel"
     data-bs-interval="4000">
-
       <div class="carousel-inner">
-
         <div class="carousel-item active">
           <div class="main-banner">
             <?php foreach ($bannerData as $imgUrl): ?>
@@ -67,57 +65,59 @@
         </div>
       </div> <!-- /carousel-inner -->
 
-      <button 
-        class="carousel-control-prev" 
-        type="button" 
-        data-bs-target="#carouselExampleIndicators" 
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
 
-      <button 
-        class="carousel-control-next" 
-        type="button" 
-        data-bs-target="#carouselExampleIndicators" 
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
         data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
 
       <div class="carousel-indicators">
-        <button 
+        <button
           class="active"
-          type="button" 
-          data-bs-target="#carouselExampleIndicators" 
-          data-bs-slide-to="0" 
-          aria-current="true" 
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          aria-current="true"
           aria-label="Slide 1">
         </button>
 
-        <button 
-          type="button" 
-          data-bs-target="#carouselExampleIndicators" 
-          data-bs-slide-to="1" 
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
           aria-label="Slide 2">
         </button>
 
-        <button 
-          type="button" 
-          data-bs-target="#carouselExampleIndicators" 
-          data-bs-slide-to="2" 
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
           aria-label="Slide 3">
         </button>
       </div>
-
     </div> <!-- /carousel -->
-  </div> 
+  </div>
 </div>
 
-
-
 <?= view('scroll-menu') ?>
-<?= view('footer2') ?>
+<?= view('header-news') ?>
+<?= view('scroll-news') ?>
+
+
+
+
 
 
 <?= view('footer') ?>
@@ -126,6 +126,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <?php //include 'vacancies-form.php'; ?>
-
 <?= view('blocks.site-bottom') ?>
+
+
 
