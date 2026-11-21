@@ -1,8 +1,8 @@
 .blog-set {
     width: 100%;
     margin: 30px auto 0;
-    max-width: calc(1430px + 43px * 2);
-    padding: 0 43px;
+    /* max-width: calc(1430px + 43px * 2); */
+    /* padding: 0 43px; */
 }
 
 .section.blog-head {

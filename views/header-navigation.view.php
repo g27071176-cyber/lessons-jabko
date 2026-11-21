@@ -146,7 +146,7 @@
           </a>
         </li>
         <li class="right-menu-item">
-          <a class="sliced-comers" href="?page=product-edit">
+          <a class="sliced-comers" href="?page=product-add">
             <span>Add product <i class="bi bi-airplane"></i></span>
           </a>
         </li>
